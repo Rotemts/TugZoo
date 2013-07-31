@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+
+
+
+        <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/item_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_shape_up_black"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/item_img"
+                android:background="@drawable/bg_shape_down_white"
+                />
+
+
+        <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/item_price"
+                android:textSize="30dp"
+                android:textColor="#ffe67e22"
+                android:layout_alignBottom="@+id/item_img"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/item_name"
+                android:textSize="30dp"
+                android:textColor="#f000"
+                android:layout_alignBottom="@+id/item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu"
+                android:layout_margin="15dp" />
+
+
+    </RelativeLayout>
+
+    <GridView
+            android:id="@+id/items_grid"
+            android:numColumns="2"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

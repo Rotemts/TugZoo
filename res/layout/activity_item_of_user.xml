@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/item_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_shape_up_black"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/item_img"
+                android:background="@drawable/bg_shape_down_white"
+                />
+
+
+        <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/parent_item_name"
+                android:textSize="30dp"
+                android:textColor="#f000"
+                android:layout_alignBottom="@+id/item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu"
+                android:layout_margin="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/img_frame"
+                android:layout_width="88dp"
+                android:layout_height="88dp">
+        <ImageView
+                android:background="#600f"
+                android:scaleType="centerCrop"
+                android:id="@+id/user_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_img_mask"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+
+        <TextView
+                android:layout_toRightOf="@+id/img_frame"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"
+                android:text="some user"/>
+
+        <TextView
+                android:layout_toRightOf="@+id/img_frame"
+                android:layout_below="@+id/user_name"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#faaa"
+                android:text="100% positive feedback"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_desc"
+            android:layout_toRightOf="@+id/user_img"
+            android:layout_below="@+id/map" />
+
+
+
+
+    <TextView
+            android:id="@+id/rent_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent Now!"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/text_white"
+            android:background="@drawable/button_bg"
+            android:layout_alignParentBottom="true" />
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/item_img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fake_map" />
+
+
+</LinearLayout>
